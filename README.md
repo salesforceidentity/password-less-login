@@ -11,9 +11,9 @@ This project provides an example of password-less login into Salesforce Communit
 This solution uses a custom Communities login visualforce page and an Apex controller that implement a single page interactive login process.. The Apex controller first renders a visualforce page the invites users to enter their phone number, and then renders a secondary visualforce page that prompts users to enter the One-Time-Password (OTP) code that is sent to their phone.
 
 When users enter their phone number and hit ‘Next’ the login controller does the following:
-Lookup the user based on the entered phone number. If no user with a matching phone number is found an error message shows up. 
-Generates a OTP code and send it via SMS to the user phone
-Dynamically renders the secondary page that prompts the user to enter the OTP for validation.  
+- Lookup the user based on the entered phone number. If no user with a matching phone number is found an error message shows up. 
+- Generates a OTP code and send it via SMS to the user phone
+- Dynamically renders the secondary page that prompts the user to enter the OTP for validation.  
 
 When the user types in the OTP the controller verifies if this OTP matches the one that was originally generated and sent to the user by the controller. If the two OTPs match the user identity is successfully verified and the controller invokes an OAuth JWT Bearer flow to get an API session (access token), and then exchange it with a UI session and log in the user into the Community.
 
