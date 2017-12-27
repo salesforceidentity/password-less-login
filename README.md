@@ -15,7 +15,7 @@ When users enter their phone number and hit ‘Next’ the login controller does
 - Generates a OTP code and send it via SMS to the user phone
 - Dynamically renders the secondary page that prompts the user to enter the OTP for validation.  
 
-When the user types in the OTP the controller verifies if this OTP matches the one that was originally generated and sent to the user by the controller. If the two OTPs match the user identity is successfully verified and the controller invokes an OAuth JWT Bearer flow to get an API session (access token), and then exchange it with a UI session and log in the user into the Community.
+When the user types in the OTP the controller verifies if this OTP matches the one that was originally generated and sent to the user by the controller. If the two OTPs match the user identity is successfully verified and the controller invokes an [OAuth JWT Bearer flow](https://help.salesforce.com/articleView?id=remoteaccess_oauth_jwt_flow.htm) to get an API session (access token), and then exchange it with a UI session and log in the user into the Community.
 
 
 Some things to keep in mind
@@ -47,7 +47,7 @@ Instructions
 
 3. Create a connected app
  
-   Create a connected app to handle the [OAuth JWT bearer flow](https://help.salesforce.com/articleView?id=remoteaccess_oauth_jwt_flow.htm&type=0)
+   Create a connected app to handle the OAuth JWT bearer flow 
 
    - Go to Setup > Build > Create > Apps and create an OAuth connected app
    - Enter 'https://login.salesforce.com/services/oauth2/success' as the Callback URL
