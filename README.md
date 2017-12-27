@@ -1,4 +1,12 @@
-# Password-less-login
+Password-less login
+===================
+Password-less login into Salesforce Communities 
+
+
+Overview
+--------
+This project provides an example of password-less login in Salesforce community to enable your customers and partners to login using a OTP that is sent to them via SMS or Email.
+
 
 1. Integrate a 3rd party SMS delivery service such as Twilio or TeleSign
 
