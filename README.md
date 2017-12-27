@@ -46,11 +46,11 @@ Instructions
 6. Create the LoginController apex class 
    
    Replace the following:
-   '<YOUR ACCOUNT SID>' - The Twilio Account SID
-   <YOUR AUTH TOKEN>  - The Twilio Auth Token 
-   <YOUR Twilio Phone Number> - The phone number that initiated the OTP message. This should be one of your Twilio phone numbers.
+   - TWILIO_ACCOUNT_SID  - The Twilio Account SID
+   - TWILIO_AUTH_TOKEN   - The Twilio Auth Token 
+   - TWILIO_PHONE_NUMBER - The phone number that initiated the OTP message. This should be one of your Twilio phone numbers.
 
-   <CONNECTED APP CLIENT_ID> - The connected app client id 
+   - CONNECTED_APP_CLIENT_ID - The connected app client id 
  
 7. In Communities, under Administration > Login & Registration, choose the Passwordless visualforce page as the login page. 
 

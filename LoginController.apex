@@ -1,10 +1,10 @@
 global with sharing class LoginController {
 
-    global string TwillioAccountSid = '<YOUR ACCOUNT SID>';
-    global string TwillioToken = '<YOUR AUTH TOKEN>';
-    global string FromPhoneNumber = '<YOUR Twilio Phone Number>';
+    global string TwillioAccountSid = 'TWILIO_ACCOUNT_SID';
+    global string TwillioToken = 'TWILIO_AUTH_TOKEN';
+    global string FromPhoneNumber = 'TWILIO_PHONE_NUMBER';
 
-    global String client_id = '<CONNECTED APP CLIENT_ID>';
+    global String client_id = 'CONNECTED_APP_CLIENT_ID';
     
     global String input {get; set;}
    
