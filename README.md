@@ -39,15 +39,15 @@ Instructions
 
 2. Generate private and public key
 
-   The private key is required to sign the JSON Web Token (JWT) requests.
-   The certificate (public key) is required to verify the JSON Web Signature (JWS) and perform the API-based authentication. 
+   The private key is required for signing the JSON Web Token (JWT) requests.
+   The certificate (public key) is required for verifying the JSON Web Signature (JWS) and perform the API-based authentication. 
    
     - Go to Setup > Security Controls > Certificate and Key Management and generate a self-signed certificate.
     - Download the certificate to you desktop
 
 3. Create a connected app
  
-   Create a connected app to handle the OAuth JWT bearer flow
+   Create a connected app to handle the [OAuth JWT bearer flow](https://help.salesforce.com/articleView?id=remoteaccess_oauth_jwt_flow.htm&type=0)
 
    - Go to Setup > Build > Create > Apps and create an OAuth connected app
    - Enter 'https://login.salesforce.com/services/oauth2/success' as the Callback URL
