@@ -22,7 +22,7 @@
    - Select API scope
    - Upload the certificate from step #2
 
-4. Remote Site Settings
+4. Create a Remote Site Setting
 
    To allow Communities to make outbound HTTP calls to itself there's a need to whitelist the Community URL. 
 
@@ -32,14 +32,12 @@
 
 6. Create the LoginController apex class 
    
-   Replace the following
+   Replace the following:
    - <YOUR ACCOUNT SID> - The Twilio Account SID
    - <YOUR AUTH TOKEN>  - The Twilio Auth Token 
    - <YOUR Twilio Phone Number> - The phone number that initiated the OTP message. This should be one of your Twilio phone numbers.
 
    - <CONNECTED APP CLIENT_ID> - The connected app client id 
  
-7. Create the Passwordless vf page
-
-8. In Communities, under Administration > Login & Registration, choose the Passwordless visualforce page as the login page. 
+7. In Communities, under Administration > Login & Registration, choose the Passwordless visualforce page as the login page. 
 
